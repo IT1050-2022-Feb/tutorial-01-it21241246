@@ -1,3 +1,4 @@
+
 /*Exercise 4 - Functions
 
 Implement the three functions minimum(), maximum() and multiply() below the main() function.
@@ -5,6 +6,10 @@ Implement the three functions minimum(), maximum() and multiply() below the main
 Do not change the code given in the main() function when you are implementing your solution.*/
 
 #include <stdio.h>
+
+int minimum( int no1 , int no2);
+int maximum( int no1, int no2);  
+int multiply( int no1, int no2);
 
 int main() {
    int no1, no2;
@@ -16,4 +21,40 @@ int main() {
    printf("%d ", maximum(no1, no2));
    printf("%d ", multiply(no1, no2));
    return 0;
+}
+
+int minimum( int no1 , int no2)
+{
+  
+  if( no1 < no2)
+  return no1;
+  else if ( no1 > no2 )
+ return no2;
+ else
+ printf("Both are equal"); 
+ return 0;
+
+}
+
+int maximum( int no1 , int no2)
+{
+  if( no1 < no2)
+  return no2;
+  else if ( no1 > no2 )
+ return no1;
+ else
+ printf("Both are equal"); 
+ return 0;
+
+
+}  
+
+int multiply( int no1 , int no2)
+{
+  int mul;
+
+  mul = no1 * no2;
+
+  return mul;
+
 }
